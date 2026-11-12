@@ -1,0 +1,50 @@
+
+P1: PROJECT FOLDER AND TERMINAL NAVIGATION
+===========================================
+
+1. pwd
+   Displays the current working directory.
+
+2. ls
+   Displays all files and folders in the current directory.
+
+3. cd Desktop
+   Navigates to the Desktop directory.
+
+4. mkdir html-css-github-practice
+   Creates the main project folder.
+
+5. cd html-css-github-practice
+   Enters the main project folder.
+
+6. mkdir Module-1-Git-GitHub
+   Creates the first module folder.
+
+7. mkdir Module-2-HTML-CSS
+   Creates the second module folder.
+
+8. mkdir Module-3-CSS-Layout
+   Creates the third module folder.
+
+9. cd Module-1-Git-GitHub
+   Enters the first module.
+
+10. mkdir P1-terminal-navigation
+    Creates the P1 problem folder.
+
+11. cd ..
+    Moves one directory backward.
+
+12. touch README.md
+    Creates a Markdown documentation file.
+
+13. touch commands.txt
+    Creates a text file.
+
+14. code .
+    Opens the current directory in VS Code.
+
+LEARNING OUTCOME
+================
+Learned basic terminal navigation, directory creation,
+file creation and project organization.

@@ -1,0 +1,178 @@
+
+/* ==================================
+   1. DESIGN TOKENS
+================================== */
+
+:root {
+    /* Color tokens */
+    --primary-color: #172554;
+    --secondary-color: #2563eb;
+    --accent-color: #f59e0b;
+
+    --background-color: #f1f5f9;
+    --surface-color: #ffffff;
+    --text-color: #1e293b;
+
+    /* Typography tokens */
+    --font-family: Arial, sans-serif;
+
+    --font-small: 14px;
+    --font-normal: 16px;
+    --font-large: 20px;
+    --font-heading: 32px;
+
+    /* Spacing tokens */
+    --space-small: 10px;
+    --space-medium: 20px;
+    --space-large: 40px;
+
+    /* Other design tokens */
+    --card-radius: 12px;
+}
+
+/* ==================================
+   2. GENERAL STYLING
+================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: var(--font-normal);
+    line-height: 1.6;
+}
+
+/* ==================================
+   3. HEADER
+================================== */
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: var(--space-large);
+}
+
+.header h1 {
+    font-size: var(--font-heading);
+    margin-bottom: var(--space-small);
+}
+
+/* ==================================
+   4. MAIN CONTENT
+================================== */
+
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: var(--space-large) auto;
+}
+
+.card {
+    background-color: var(--surface-color);
+    padding: var(--space-medium);
+    margin-bottom: var(--space-medium);
+    border-radius: var(--card-radius);
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: var(--space-medium);
+}
+
+h3 {
+    margin-bottom: var(--space-small);
+}
+
+/* ==================================
+   5. TYPOGRAPHY SYSTEM
+================================== */
+
+.large-text {
+    font-size: var(--font-large);
+}
+
+.small-text {
+    font-size: var(--font-small);
+}
+
+/* ==================================
+   6. COLOR PALETTE
+================================== */
+
+.color-box {
+    padding: var(--space-medium);
+    margin-bottom: var(--space-small);
+    color: white;
+    border-radius: 6px;
+}
+
+.one {
+    background-color: var(--primary-color);
+}
+
+.two {
+    background-color: var(--secondary-color);
+}
+.three {
+    background-color: var(--accent-color);
+}
+
+
+/* ==================================
+   7. SPACING SYSTEM
+================================== */
+
+.spacing-box {
+    background-color: #dbeafe;
+    padding: var(--space-small);
+    margin-bottom: var(--space-small);
+}
+
+.medium {
+    padding: var(--space-medium);
+}
+
+.large {
+    padding: var(--space-large);
+}
+
+/* ==================================
+   8. BUTTONS
+================================== */
+
+button {
+    padding: var(--space-small) var(--space-medium);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--font-normal);
+    margin-right: var(--space-small);
+}
+
+.primary-button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary-button {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* ==================================
+   9. FOOTER
+================================== */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: var(--space-medium);
+}

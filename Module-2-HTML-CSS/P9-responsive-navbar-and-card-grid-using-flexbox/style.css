@@ -1,0 +1,223 @@
+
+/* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.navbar {
+    background-color: #172554;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #93c5fd;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 70px 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* About and Contact */
+
+.about,
+.contact {
+    background-color: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+
+/* =========================
+   PROJECT CARD GRID
+========================= */
+
+#projects {
+    margin-top: 35px;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+    color: #1d4ed8;
+}
+
+/* Flexbox container */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Individual card */
+
+.card {
+    background-color: white;
+
+    flex: 1 1 230px;
+    max-width: 260px;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Card color areas */
+
+.card-image {
+    height: 150px;
+}
+
+.image-one {
+    background-color: #2563eb;
+}
+
+.image-two {
+    background-color: #7c3aed;
+}
+
+.image-three {
+    background-color: #059669;
+}
+
+.image-four {
+    background-color: #ea580c;
+}
+
+/* Card content */
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================
+   TABLET RESPONSIVENESS
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 90%;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 45px 15px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        flex-basis: 100%;
+        max-width: none;
+    }
+}
