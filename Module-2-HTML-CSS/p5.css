@@ -1,0 +1,29 @@
+  nav {
+            position:sticky;
+            top:0;
+            background-color: #222;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 8%;
+            flex-direction: row;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card{
+            flex: 200px;
+            padding:60px 20px;
+            background:#eee;
+            text-align:center;
+            border-radius:8px;
+        }
